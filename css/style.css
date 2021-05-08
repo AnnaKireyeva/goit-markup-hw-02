@@ -1,0 +1,212 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --accent-color: #2196f3;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+body {
+  font-family: var(--main-font);
+}
+/* ========================== COMPONENTS ================ */
+.common-title {
+  /* font-family: "Roboto", sans-serif; */
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+/* ========================== END COMPONENTS ============ */
+
+/* ========================== HEADER ==================== */
+.logo-link {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+  /* text-decoration: none; */
+}
+.logo-link .logo-blue-part {
+  color: var(--accent-color);
+}
+.menu-link {
+  /* font-family: "Roboto", sans-serif; */
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+  /* text-decoration: none; */
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+
+.menu-link.current {
+  color: var(--accent-color);
+}
+
+.mail-link,
+.tel-link {
+  /* font-family: "Roboto", sans-serif; */
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  /* text-decoration: none; */
+}
+
+.mail-link:hover,
+.mail-link:focus,
+.tel-link:hover,
+.tel-link:focus {
+  color: var(--accent-color);
+}
+/* ======================== END HEADER ==================== */
+
+/* ======================== HERO ========================== */
+.hero {
+  background: #2f303a;
+}
+.hero-title {
+  /* font-family: "Roboto", sans-serif; */
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.hero-btn {
+  /* font-family: "Roboto", sans-serif; */
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: transparent;
+  cursor: pointer;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--accent-color);
+}
+/* =========================END HERO========================== */
+/* =========================BENEFITS========================== */
+.benefits-subtitle {
+  /* font-family: "Roboto", sans-serif; */
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 11.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+.text {
+  /* font-family: "Roboto", sans-serif; */
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/* =========================END BENEFITS========================== */
+/* ========================= ABOUT =============================== */
+
+/* ========================= END ABOUT ============================= */
+
+/* ========================= TEAM ================================== */
+.team-name {
+  /* font-family: "Roboto", sans-serif; */
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.team-position {
+  /* font-family: "Roboto", sans-serif; */
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/* ============================= END TEAM ======================= */
+/* ============================= FOOTER ========================= */
+footer {
+  background: #2f303a;
+}
+.footer-logo-link {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer-logo-blue-part {
+  color: var(--accent-color);
+}
+.adress-text {
+  /* font-family: "Roboto", sans-serif; */
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71x;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer-list-item-link {
+  /* font-family: "Roboto", sans-serif; */
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+/* ============================== END FOOTER ====================== */
+/* ============================== Styles for portfolio============= */
+.menu-portfolio-link {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  background: #f5f4fa;
+  color: #212121;
+}
+.menu-portfolio-link:hover {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+.img-list-pic-title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.img-list-pic-text {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
