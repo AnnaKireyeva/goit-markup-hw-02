@@ -10,6 +10,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -29,60 +31,59 @@
         </ul>
     </header>
     <main>
-        <section class="menu-section">
-            <nav class="menu-portfolio">
-                <ul class="menu-portfolio-list list">
-                    <li class="menu-portfolio-item"><a class="menu-portfolio-link link" href="">Все</a></li>
-                    <li class="menu-portfolio-item"><a class="menu-portfolio-link link" href="">Приложения</a></li>
-                    <li class="menu-portfolio-item"><a class="menu-portfolio-link link" href="">Дизайн</a></li>
-                    <li class="menu-portfolio-item"><a class="menu-portfolio-link link" href="">Маркетинг</a></li>
-                </ul>
-            </nav>
-            <ul class="img-list list">
-                <li class="img-list-item">
-                    <img class="img-list-pic" src="./img/laptopO.jpg" alt="laptop">
-                    <h2 class="img-list-pic-title">Технокряк</h2>
-                    <p class="img-list-pic-text">Веб-сайт</p>
+        <section class="portfolio-section">
+            <h1 class="visually-hidden">Наши работы</h1>
+            <ul class="filtr-section-list list">
+                <li class="filtr-section-item"><button class="filtr-btn" type="button">Все</button></li>
+                <li class="filtr-section-item"><button class="filtr-btn" type="button">Приложения</button></li>
+                <li class="filtr-section-item"><button class="filtr-btn" type="button">Дизайн</button></li>
+                <li class="filtr-section-item"><button class="filtr-btn" type="button">Маркетинг</button></li>
+            </ul>
+            <ul class="portfolio-list list">
+                <li class="portfolio-item">
+                    <img class="portfolio-img" src="./img/laptopO.jpg" alt="laptop" width="370">
+                    <h2 class="portfolio-img-title">Технокряк</h2>
+                    <p class="portfolio-img-text">Веб-сайт</p>
                 </li>
-                <li class="img-list-item">
-                    <img class="img-list-pic" src="./img/basketO.jpg" alt="basketball">
-                    <h2 class="img-list-pic-title">Постер New Orlean vs Golden Star</h2>
-                    <p class="img-list-pic-text">Дизайн</p>
+                <li class="portfolio-item">
+                    <img class="portfolio-img" src="./img/basketO.jpg" alt="basketball" width="370">
+                    <h2 class="portfolio-img-title">Постер New Orlean vs Golden Star</h2>
+                    <p class="portfolio-img-text">Дизайн</p>
                 </li>
-                <li class="img-list-item">
-                    <img class="img-list-pic" src="./img/seafoodO.jpg" alt="restaurant seeafood">
-                    <h2 class="img-list-pic-title">Ресторан Seafood</h2>
-                    <p class="img-list-pic-text">Приложение</p>
+                <li class="portfolio-item">
+                    <img class="portfolio-img" src="./img/seafoodO.jpg" alt="restaurant seeafood" width="370">
+                    <h2 class="portfolio-img-title">Ресторан Seafood</h2>
+                    <p class="portfolio-img-text">Приложение</p>
                 </li>
-                <li class="img-list-item">
-                    <img class="img-list-pic" src="./img/earphonesO.jpg" alt="earphones">
-                    <h2 class="img-list-pic-title"Проект Prime></h2>
-                    <p class="img-list-pic-text">Маркетинг</p>
+                <li class="portfolio-item">
+                    <img class="portfolio-img" src="./img/earphonesO.jpg" alt="earphones" width="370">
+                    <h2 class="portfolio-img-title">Проект Prime</h2>
+                    <p class="portfolio-img-text">Маркетинг</p>
                 </li>
-                <li class="img-list-item">
-                    <img class="img-list-pic" src="./img/box_projectO.jpg" alt="boxes">
-                    <h2 class="img-list-pic-title">Проект Boxes</h2>
-                    <p class="img-list-pic-text">Приложение</p>
+                <li class="portfolio-item">
+                    <img class="portfolio-img" src="./img/box_projectO.jpg" alt="boxes" width="370">
+                    <h2 class="portfolio-img-title">Проект Boxes</h2>
+                    <p class="portfolio-img-text">Приложение</p>
                 </li>
-                <li class="img-list-item">
-                    <img class="img-list-pic" src="./img/monitorO.jpg" alt="monitor">
-                    <h2 class="img-list-pic-title">Inspiration has no Borders</h2>
-                    <p class="img-list-pic-text">Веб-сайт</p>
+                <li class="portfolio-item">
+                    <img class="portfolio-img" src="./img/monitorO.jpg" alt="monitor" width="370">
+                    <h2 class="portfolio-img-title">Inspiration has no Borders</h2>
+                    <p class="portfolio-img-text">Веб-сайт</p>
                 </li>
-                <li class="img-list-item">
-                    <img class="img-list-pic" src="./img/bookO.jpg" alt="book">
-                    <h2 class="img-list-pic-title">Издание Limited Edition</h2>
-                    <p class="img-list-pic-text">Дизайн</p>
+                <li class="portfolio-item">
+                    <img class="portfolio-img" src="./img/bookO.jpg" alt="book" width="370">
+                    <h2 class="portfolio-img-title">Издание Limited Edition</h2>
+                    <p class="portfolio-img-text">Дизайн</p>
                 </li>
-                <li class="img-list-item">
-                    <img class="img-list-pic" src="./img/labelO.jpg" alt="lable">
-                    <h2 class="img-list-pic-title">Проект LAB</h2>
-                    <p class="img-list-pic-text">Маркетинг</p>
+                <li class="portfolio-item">
+                    <img class="portfolio-img" src="./img/labelO.jpg" alt="lable" width="370">
+                    <h2 class="portfolio-img-title">Проект LAB</h2>
+                    <p class="portfolio-img-text">Маркетинг</p>
                 </li>
-                <li class="img-list-item">
-                    <img class="img-list-pic" src="./img/laptop_typingO.jpg" alt="typing on laptop">
-                    <h2 class="img-list-pic-title">Growing Business</h2>
-                    <p class="img-list-pic-text">Приложение</p>
+                <li class="portfolio-item">
+                    <img class="portfolio-img" src="./img/laptop_typingO.jpg" alt="typing on laptop" width="370">
+                    <h2 class="portfolio-img-title">Growing Business</h2>
+                    <p class="portfolio-img-text">Приложение</p>
                 </li>
             </ul>
         </section>                     

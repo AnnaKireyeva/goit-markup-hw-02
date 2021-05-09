@@ -1,7 +1,10 @@
 :root {
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
+  --main-text-color: #212121;
   --accent-color: #2196f3;
+  --secondary-text-color: #ffffff;
+  --secondary-gray-color: #757575;
 }
 .list {
   list-style: none;
@@ -11,16 +14,34 @@
 }
 body {
   font-family: var(--main-font);
+  color: var(--main-text-color);
 }
+/* *,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+} */
 /* ========================== COMPONENTS ================ */
 .common-title {
-  /* font-family: "Roboto", sans-serif; */
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 /* ========================== END COMPONENTS ============ */
 
@@ -32,7 +53,6 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
-  /* text-decoration: none; */
 }
 .logo-link .logo-blue-part {
   color: var(--accent-color);
@@ -43,8 +63,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
-  /* text-decoration: none; */
+  color: var(--main-text-color);
 }
 
 .menu-link:hover,
@@ -58,13 +77,11 @@ body {
 
 .mail-link,
 .tel-link {
-  /* font-family: "Roboto", sans-serif; */
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
-  /* text-decoration: none; */
+  color: var(--secondary-gray-color);
 }
 
 .mail-link:hover,
@@ -80,50 +97,42 @@ body {
   background: #2f303a;
 }
 .hero-title {
-  /* font-family: "Roboto", sans-serif; */
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--secondary-text-color);
 }
 .hero-btn {
-  /* font-family: "Roboto", sans-serif; */
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: transparent;
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
   cursor: pointer;
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: var(--accent-color);
+  background-color: #188ce8;
 }
 /* =========================END HERO========================== */
 /* =========================BENEFITS========================== */
 .benefits-subtitle {
-  /* font-family: "Roboto", sans-serif; */
   font-weight: 700;
   font-size: 14px;
-  line-height: 11.14;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--main-text-color);
 }
 .text {
-  /* font-family: "Roboto", sans-serif; */
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-gray-color);
 }
 /* =========================END BENEFITS========================== */
 /* ========================= ABOUT =============================== */
@@ -132,20 +141,17 @@ body {
 
 /* ========================= TEAM ================================== */
 .team-name {
-  /* font-family: "Roboto", sans-serif; */
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-text-color);
 }
 .team-position {
-  /* font-family: "Roboto", sans-serif; */
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-gray-color);
 }
 /* ============================= END TEAM ======================= */
 /* ============================= FOOTER ========================= */
@@ -158,55 +164,58 @@ footer {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--secondary-text-color);
 }
 .footer-logo-blue-part {
   color: var(--accent-color);
 }
 .adress-text {
-  /* font-family: "Roboto", sans-serif; */
-  font-weight: 400;
+  font-style: normal;
   font-size: 14px;
-  line-height: 1.71x;
+  line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--secondary-text-color);
 }
 .footer-list-item-link {
-  /* font-family: "Roboto", sans-serif; */
   font-weight: 400;
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+.footer-list-item-link:hover,
+.footer-list-item-link:focus {
+  color: var(--accent-color);
+}
 /* ============================== END FOOTER ====================== */
 /* ============================== Styles for portfolio============= */
-.menu-portfolio-link {
+.filtr-btn {
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
   background: #f5f4fa;
-  color: #212121;
+  color: var(--main-text-color);
+  cursor: pointer;
 }
-.menu-portfolio-link:hover {
+.filtr-btn:hover,
+.filtr-btn:focus {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--secondary-text-color);
 }
-.img-list-pic-title {
+.portfolio-img-title {
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--main-text-color);
 }
-.img-list-pic-text {
+.portfolio-img-text {
   font-family: var(--main-font);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-gray-color);
 }
